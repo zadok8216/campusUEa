@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Campus UEA</string>
+    <string name="city_manaus">Manaus</string>
+    <string name="city_itacoatiara">Itacoatiara</string>
+    <string name="est">EST - Escola Superior de Tecnologia</string>
+    <string name="esa">ESA - Escola Superior de \nCiências da Saúde</string>
+    <string name="esat">ESAT - Escola Superior de Artes e Turismo</string>
+    <string name="ens">ENS - Escola Normal Superior</string>
+    <string name="eso">ESO - Escola Superior de Ciências Sociais</string>
+    <string name="cesit">CESIT - Centro de Estudos Superiores de Itacoatiara</string>
+</resources>
