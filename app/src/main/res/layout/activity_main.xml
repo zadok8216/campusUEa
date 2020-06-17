@@ -22,12 +22,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/city_manaus"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toEndOf="@id/est_text"
         app:layout_constraintBottom_toBottomOf="@id/est_text"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="32dp"
         android:textSize="16sp"
-        android:background="@color/colorAccent"/>
+        android:background="@color/secondaryColor"/>
 
     <TextView
         android:id="@+id/esa_text"
@@ -45,6 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/city_manaus"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@id/esa_text"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +54,7 @@
         app:layout_constraintStart_toEndOf="@id/esa_text"
         app:layout_constraintTop_toBottomOf="@id/city_est"
         app:layout_constraintVertical_bias="0.666"
-        android:background="@color/colorAccent" />
+        android:background="@color/secondaryColor" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
