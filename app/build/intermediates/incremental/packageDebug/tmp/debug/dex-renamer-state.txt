@@ -1,0 +1,4 @@
+#Thu Jun 18 21:26:53 AMT 2020
+base.0=/home/leonardo/Downloads/campusuea-20200617T164655Z-001/campusuea/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

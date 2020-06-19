@@ -6,55 +6,297 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/est_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/est"
-        android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/city_est"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/reitoria_text"
+        style="@style/text_universitity"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/reitoria"
+        app:layout_constraintStart_toEndOf="@id/reitoria_Image"
+        app:layout_constraintTop_toTopOf="@id/reitoria_Image"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/city_reitoria"
+        style="@style/city_style"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="10dp"
         android:text="@string/city_manaus"
-        android:textColor="#FFFFFF"
-        app:layout_constraintStart_toEndOf="@id/est_text"
-        app:layout_constraintBottom_toBottomOf="@id/est_text"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="32dp"
-        android:textSize="16sp"
-        android:background="@color/secondaryColor"/>
+        app:layout_constraintTop_toTopOf="@id/reitoria_text"
+        tools:layout_editor_absoluteX="345dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <ImageView
+        android:id="@+id/reitoria_Image"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#98FB98"
+        android:contentDescription="TODO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_location_city_24px"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="29dp" />
+
 
     <TextView
         android:id="@+id/esa_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/est_text"
-        app:layout_constraintStart_toStartOf="parent"
+        style="@style/text_universitity"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:text="@string/esa"
-        android:textSize="18sp" />
+        app:layout_constraintEnd_toStartOf="@id/city_esa"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/esa_Image"
+        app:layout_constraintTop_toTopOf="@id/esa_Image" />
+
 
     <TextView
         android:id="@+id/city_esa"
+        style="@style/city_style"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/city_manaus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city_reitoria" />
+
+    <ImageView
+        android:id="@+id/esa_Image"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#98FB98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reitoria_Image"
+        app:srcCompat="@drawable/ic_science_24px"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/esat_text"
+        style="@style/text_universitity"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/esat"
+        app:layout_constraintEnd_toStartOf="@id/city_esat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/esat_Image"
+        app:layout_constraintTop_toTopOf="@id/esat_Image" />
+
+    <TextView
+        android:id="@+id/city_esat"
+        style="@style/city_style"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/city_manaus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city_esa" />
+
+    <ImageView
+        android:id="@+id/esat_Image"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#98FB98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/esa_Image"
+        app:srcCompat="@drawable/ic_brush_24px"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/eso_text"
+        style="@style/text_universitity"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/eso"
+        app:layout_constraintEnd_toStartOf="@id/city_eso"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/eso_Image"
+        app:layout_constraintTop_toTopOf="@id/eso_Image" />
+
+    <TextView
+        android:id="@+id/city_eso"
+        style="@style/city_style"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/city_manaus"
+        app:layout_constraintBottom_toTopOf="@+id/city_ens"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city_esat"
+        app:layout_constraintVertical_bias="0.581" />
+
+    <ImageView
+        android:id="@+id/eso_Image"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#98FB98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/esat_Image"
+        app:srcCompat="@drawable/ic_gavel_24px"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/ens_text"
+        style="@style/text_universitity"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/ens"
+        app:layout_constraintEnd_toStartOf="@+id/city_ens"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/ens_Image"
+        app:layout_constraintTop_toTopOf="@id/ens_Image" />
+
+    <TextView
+        android:id="@+id/city_ens"
+        style="@style/city_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
         android:text="@string/city_manaus"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@id/esa_text"
+        app:layout_constraintBottom_toTopOf="@+id/city_est"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ens_Image"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#98FB98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eso_Image"
+        app:srcCompat="@drawable/ic_history_edu_24px"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/est_text"
+        style="@style/text_universitity"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/est"
+        app:layout_constraintEnd_toStartOf="@+id/city_est"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/est_Image"
+        app:layout_constraintTop_toTopOf="@id/est_Image" />
+
+    <TextView
+        android:id="@+id/city_est"
+        style="@style/city_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/city_manaus"
+        app:layout_constraintBottom_toTopOf="@+id/city_cesit"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/est_Image"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#98FB98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ens_Image"
+        app:srcCompat="@drawable/engineering_24px"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/cecit_text"
+        style="@style/text_universitity"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/cesit"
+        app:layout_constraintEnd_toStartOf="@+id/city_cesit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/cesit_Image"
+        app:layout_constraintTop_toTopOf="@id/cesit_Image" />
+
+
+    <TextView
+        android:id="@+id/city_cesit"
+        style="@style/city_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/city_itacoatiara"
+        app:layout_constraintBottom_toBottomOf="@+id/cecit_text"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/cesit_Image"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#98FB98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/est_Image"
+        app:srcCompat="@drawable/ic_school_24px"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <EditText
+        android:id="@+id/editView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_name"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@id/imageUEA"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.931"
-        app:layout_constraintStart_toEndOf="@id/esa_text"
-        app:layout_constraintTop_toBottomOf="@id/city_est"
-        app:layout_constraintVertical_bias="0.666"
-        android:background="@color/secondaryColor" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cecit_text"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/text_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_universitity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imageUEA"
+        app:layout_constraintTop_toBottomOf="@id/cecit_text"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:background="@color/primaryColor"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/editView"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/imageUEA"
+        android:layout_width="291dp"
+        android:layout_height="103dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_uealogo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

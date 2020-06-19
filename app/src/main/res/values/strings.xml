@@ -2,11 +2,13 @@
     <string name="app_name">Campus UEA</string>
     <string name="city_manaus">Manaus</string>
     <string name="city_itacoatiara">Itacoatiara</string>
-    <string name="est">EST - Escola Superior de Tecnologia</string>
-    <string name="esa">ESA - Escola Superior de \nCiências da Saúde</string>
-    <string name="esat">ESAT - Escola Superior de Artes e Turismo</string>
-    <string name="ens">ENS - Escola Normal Superior</string>
-    <string name="eso">ESO - Escola Superior de Ciências Sociais</string>
-    <string name="cesit">CESIT - Centro de Estudos Superiores de Itacoatiara</string>
+    <string name="reitoria"><u>Reitoria UEA </u></string>
+    <string name="est"><u>EST - Escola Superior de\nTecnologia</u></string>
+    <string name="esa"><u>ESA - Escola Superior de\nCiências da Saúde</u></string>
+    <string name="esat"><u>ESAT - Escola Superior de\nArtes e Turismo</u></string>
+    <string name="ens"><u>ENS - Escola Normal Superior</u></string>
+    <string name="eso"><u>ESO - Escola Superior de\nCiências Sociais</u></string>
+    <string name="cesit"><u>CESIT - Centro de Estudos\nSuperiores de Itacoatiara</u></string>
     <string name="location">Localização</string>
+    <string name="input_name">Digite seu nome</string>
 </resources>
